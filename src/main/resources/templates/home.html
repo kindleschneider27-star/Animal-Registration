@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en"
+            xmlns="http://www.w3.org/1999/xhtml"
+            xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments :: head}"></head>
+
+<body id="pageCenter">
+
+<div th:replace="~{fragments :: header}"></div>
+
+<main>
+    <h2>Welcome to the Clinic</h2>
+    <img class="imageRight" th:src="@{/Images/clinicFrontPage.jpg}" width="350" height="250" alt="Inside our clinic">
+    <p>Welcome to the pet registration system. This is a great place to keep track of
+        your animals and to contact an owner if a pet is lost.</p>
+</main>
+
+<footer th:replace="~{fragments :: footer}"></footer>
+
+</body>
+</html>

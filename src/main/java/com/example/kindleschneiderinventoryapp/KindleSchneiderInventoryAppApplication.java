@@ -1,13 +1,13 @@
-package com.example.kindleschneiderinventroyapp;
+package com.example.kindleschneiderinventoryapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class KindleSchneiderInventroyAppApplication {
+public class KindleSchneiderInventoryAppApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(KindleSchneiderInventroyAppApplication.class, args);
+        SpringApplication.run(KindleSchneiderInventoryAppApplication.class, args);
     }
 
 }

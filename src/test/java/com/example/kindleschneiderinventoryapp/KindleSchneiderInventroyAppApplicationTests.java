@@ -1,4 +1,4 @@
-package com.example.kindleschneiderinventroyapp;
+package com.example.kindleschneiderinventoryapp;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
