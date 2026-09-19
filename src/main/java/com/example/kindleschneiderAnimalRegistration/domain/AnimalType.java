@@ -1,4 +1,4 @@
-package com.example.kindleschneiderinventoryapp.domain;
+package com.example.kindleschneiderAnimalRegistration.domain;
 
 public enum AnimalType {
     DOG, CAT, REPTILE, AMPHIBIAN, FARM, SMALL_ANIMAL, OTHER;

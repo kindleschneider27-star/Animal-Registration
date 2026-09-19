@@ -1,4 +1,4 @@
-package com.example.kindleschneiderinventoryapp;
+package com.example.kindleschneiderAnimalRegistration;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

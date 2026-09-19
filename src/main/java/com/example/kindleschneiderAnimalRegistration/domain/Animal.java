@@ -1,6 +1,5 @@
-package com.example.kindleschneiderinventoryapp.domain;
+package com.example.kindleschneiderAnimalRegistration.domain;
 
-import java.awt.*;
 import java.util.UUID;
 
 public class Animal {

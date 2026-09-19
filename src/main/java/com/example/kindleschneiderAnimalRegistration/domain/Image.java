@@ -1,4 +1,4 @@
-package com.example.kindleschneiderinventoryapp.domain;
+package com.example.kindleschneiderAnimalRegistration.domain;
 
 public class Image {
     private String name;
