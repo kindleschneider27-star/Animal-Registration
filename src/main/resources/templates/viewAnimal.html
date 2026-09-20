@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments :: head}"></head>
+
+<body id="pageCenter">
+
+<div th:replace="~{fragments :: header}"></div>
+
+<main>
+    <aside class ="imageRight">
+        <img th:if="${current.hasImage()}" th:src="${current.image.getDataUri()}" alt="Image of pet" />
+        <img th:unless="${current.hasImage()}" th:src="@{/Images/NoPhotoLarge.jpg}" alt="no image"/>
+    </aside>
+    <h2 th:text="${current.name}">Animal Name</h2>
+    <p>Type: <span th:text = "${current.type}">Type</span></p>
+    <p>Breed/Subtype: <span th:text = "${current.subtype}">Breed</span></p>
+    <p>Birthdate: <span th:text = "${current.birthdate}">Birthdate</span></p>
+    <p>Owner Name: <span th:text = "${current.ownerName}">Owner Name</span></p>
+    <p>Owner Contact: <span th:text = "${current.ownerContact}">Owner Contact</span></p>
+</main>
+
+<footer th:replace="~{fragments :: footer}"></footer>
+
+</body>
+</html>
