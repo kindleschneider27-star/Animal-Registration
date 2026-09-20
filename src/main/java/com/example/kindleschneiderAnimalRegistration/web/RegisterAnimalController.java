@@ -19,6 +19,12 @@ public class RegisterAnimalController {
         model.addAttribute("AnimalType", AnimalType.values());
     }
 
+    @ModelAttribute
+    public Animal animal(){
+        return new Animal();
+    }
+
+
     @GetMapping
     public String registerForm() {
         return "animalRegistrationForm";
