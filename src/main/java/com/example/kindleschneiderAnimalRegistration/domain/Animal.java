@@ -93,4 +93,18 @@ public class Animal {
     public boolean hasImage() {
         return image != null && image.getContents().length > 0;
     }
+
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", type=" + type +
+                ", subtype='" + subtype + '\'' +
+                ", birthdate='" + birthdate + '\'' +
+                ", ownerName='" + ownerName + '\'' +
+                ", ownerContact='" + ownerContact + '\'' +
+                ", image=" + image +
+                '}';
+    }
 }
