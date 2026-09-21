@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments :: head}"></head>
+
+<body id="pageCenter">
+
+<div th:replace="~{fragments :: header}"></div>
+
+<main>
+    <h2>List of Animals</h2>
+    <div th:if="${animalDB == null|| animalDB.size() == 0}">
+        <p>No animals found</p>
+    </div>
+    <div th:unless="${animalDB == null|| animalDB.size() == 0}">
+        <section th:each="entry : ${animalDB}" th:with="current=${animalDB[entry.key]}">
+        <img class = "listPetImage" th:if="${current.hasImage()}" width = "125" height = "125"
+             th:src="${current.image.getDataUri()}" alt="Image of pet" />
+        <img class = "listPetImage" th:unless="${current.hasImage()}" width = "125" height = "125"
+             th:src="@{/Images/noimage.png}" alt="no image"/><br>
+            <h3><a th:href="@{'/view/current' +${current.id}}" th:text="${current.name}">Name of Animal</a></h3>
+            <p th:text="${current.type}">Type</p>
+            <p th:text="${current.subtype}">Subtype</p>
+        </section>
+    </div>
+    <section>
+        <img src="">
+    </section>
+</main>
+
+<footer th:replace="~{fragments :: footer}"></footer>
+
+</body>
+</html>

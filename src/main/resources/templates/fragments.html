@@ -4,7 +4,7 @@
       xmlns:th="http://www.thymeleaf.org">
 <head th:fragment="head">
     <meta charset="UTF-8">
-    <title>Animal Registration :: Home</title>
+    <title th:text="'Animal Registration :: ' + ${pageTitle}"></title>
     <link rel="stylesheet" th:href="@{/style.css}">
 </head>
 
@@ -12,9 +12,9 @@
 <div th:fragment="header">
     <header><h1>Animal Registration</h1></header>
     <nav>
-        <a href="#">Home</a>
-        <a href="#">Pet List</a>
-        <a href="/register">Register a Pet</a>
+        <a th:href="@{/}">Home</a>
+        <a th:href="@{/list}">Pet List</a>
+        <a th:href="@{/register}">Register a Pet</a>
     </nav>
 </div>
 </body>

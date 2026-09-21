@@ -20,6 +20,11 @@ public class RegisterAnimalController {
     @Autowired
     private AnimalDB animalDB;
 
+    @ModelAttribute("pageTitle")
+    public String addPageTitle(){
+        return "Register Animal";
+    }
+
     @ModelAttribute
     public void addAnimalTypesToModel(Model  model){
         model.addAttribute("AnimalType", AnimalType.values());
