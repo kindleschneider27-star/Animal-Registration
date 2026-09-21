@@ -19,7 +19,8 @@
              th:src="${current.image.getDataUri()}" alt="Image of pet" />
         <img class = "listPetImage" th:unless="${current.hasImage()}" width = "125" height = "125"
              th:src="@{/Images/noimage.png}" alt="no image"/><br>
-            <h3><a th:href="@{'/view/current' +${current.id}}" th:text="${current.name}">Name of Animal</a></h3>
+
+            <h3><a th:href="@{'/view/current/' +${current.id}}" th:text="${current.name}">Name of Animal</a></h3>
             <p th:text="${current.type}">Type</p>
             <p th:text="${current.subtype}">Subtype</p>
         </section>
