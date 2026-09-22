@@ -4,9 +4,13 @@ package com.example.kindleschneiderAnimalRegistration.web;
 import com.example.kindleschneiderAnimalRegistration.domain.Animal;
 import com.example.kindleschneiderAnimalRegistration.domain.AnimalDB;
 import com.example.kindleschneiderAnimalRegistration.domain.AnimalType;
+import jakarta.validation.Valid;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -17,6 +21,8 @@ import java.util.ArrayList;
 @Controller
 @RequestMapping("/register")
 public class RegisterAnimalController {
+    private static final Logger logger = LoggerFactory.getLogger(RegisterAnimalController.class);
+
     @Autowired
     private AnimalDB animalDB;
 
@@ -42,7 +48,12 @@ public class RegisterAnimalController {
     }
 
     @PostMapping
-    public String processAnimalRegister(Animal animal){
+    public String processAnimalRegister(@Valid Animal animal, Errors errors) {
+        logger.debug("Animal registered : {}", animal);
+
+        if(errors.hasErrors()){
+            return "animalRegistrationForm";
+        }
 
         if(animal.hasImage()) {
             String imageName = animal.getImage().getName();
@@ -52,8 +63,7 @@ public class RegisterAnimalController {
 
         animalDB.addAnimal(animal);
 
-        //test
-        System.out.println(animal);
+       logger.info("Animal Registered {}", animal);
 
         return "redirect:/view/current/" + animal.getId();
     }

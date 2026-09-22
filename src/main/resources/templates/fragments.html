@@ -4,7 +4,7 @@
       xmlns:th="http://www.thymeleaf.org">
 <head th:fragment="head">
     <meta charset="UTF-8">
-    <title th:text="'Animal Registration :: ' + ${pageTitle}"></title>
+    <title th:text="'Animal Registration :: ' + ${pageTitle ?: 'Home'}"></title>
     <link rel="stylesheet" th:href="@{/style.css}">
 </head>
 

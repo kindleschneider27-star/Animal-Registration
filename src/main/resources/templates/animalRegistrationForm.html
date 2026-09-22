@@ -11,16 +11,28 @@
 <main>
     <h2>Register a new pet</h2>
     <form method="POST" th:object="${animal}" enctype="multipart/form-data">
-        Name: <input type="text" th:field="*{name}"/><br>
+        Name: <input type="text" th:field="*{name}"/>
+        <span class="validationError"
+        th:if="${#fields.hasErrors('name')}"
+        th:errors="*{name}">Name Error</span> <br>
         Type: <select th:field="*{type}">
         <option th:each="t : ${AnimalType}"
                 th:value="${t}"
                 th:text="${t}">TYPE HERE</option>
     </select><br>
         Breed/Subtype: <input type="text" th:field="*{subtype}"/><br>
-        Birthdate: <input type="text" th:field="*{birthdate}"/><br>
-        Owner Name: <input type="text" th:field="*{ownerName}"/><br>
-        Owner Contact: <input type="text" th:field="*{ownerContact}"/><br>
+        Birthdate: <input type="text" th:field="*{birthdate}"/>
+        <span class="validationError"
+              th:if="${#fields.hasErrors('birthdate')}"
+              th:errors="*{birthdate}">Birthdate Error</span> <br><br>
+        Owner Name: <input type="text" th:field="*{ownerName}"/>
+        <span class="validationError"
+              th:if="${#fields.hasErrors('ownerName')}"
+              th:errors="*{ownerName}">Owner Name Error</span> <br><br>
+        Owner Contact: <input type="text" th:field="*{ownerContact}"/>
+        <span class="validationError"
+              th:if="${#fields.hasErrors('ownerContact')}"
+              th:errors="*{ownerContact}">Owner Contact Error</span> <br><br>
         Upload Picture: <input type="file" th:field="*{image}" /><br>
         <button>Register Animal</button>
     </form>

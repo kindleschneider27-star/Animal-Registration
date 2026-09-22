@@ -1,14 +1,21 @@
 package com.example.kindleschneiderAnimalRegistration.domain;
 
+import jakarta.validation.constraints.NotBlank;
+
 import java.util.UUID;
 
 public class Animal {
     private UUID id = UUID.randomUUID();
+
+    @NotBlank(message= "A name is required")
     private String name;
     private AnimalType type;
     private String subtype;
+    @NotBlank(message= "A birthday is required")
     private String birthdate;
+    @NotBlank(message= "A owner name is required")
     private String ownerName;
+    @NotBlank(message= "A owner contact is required")
     private String ownerContact;
     private Image image;
 
