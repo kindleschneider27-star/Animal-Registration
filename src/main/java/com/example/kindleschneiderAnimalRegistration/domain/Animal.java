@@ -1,14 +1,20 @@
 package com.example.kindleschneiderAnimalRegistration.domain;
 
+import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 
 import java.util.UUID;
 
+@Entity
 public class Animal {
-    private UUID id = UUID.randomUUID();
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.UUID)
+    private UUID id;
     @NotBlank(message= "A name is required")
     private String name;
+
+    @Enumerated(EnumType.STRING)
     private AnimalType type;
     private String subtype;
     @NotBlank(message= "A birthday is required")
@@ -17,6 +23,7 @@ public class Animal {
     private String ownerName;
     @NotBlank(message= "A owner contact is required")
     private String ownerContact;
+    @Embedded
     private Image image;
 
     public Animal(UUID id, String name, AnimalType type, String subtype, String birthdate, String ownerName, String ownerContact, Image image) {

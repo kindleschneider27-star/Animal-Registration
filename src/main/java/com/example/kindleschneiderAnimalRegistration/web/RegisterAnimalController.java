@@ -16,8 +16,6 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import java.util.ArrayList;
-
 @Controller
 @RequestMapping("/register")
 public class RegisterAnimalController {
@@ -56,9 +54,9 @@ public class RegisterAnimalController {
         }
 
         if(animal.hasImage()) {
-            String imageName = animal.getImage().getName();
+            String imageName = animal.getImage().getImageName();
             imageName = animal.getName() + imageName.substring(imageName.lastIndexOf('.'));
-            animal.getImage().setName(imageName);
+            animal.getImage().setImageName(imageName);
         }
 
         animalDB.addAnimal(animal);
