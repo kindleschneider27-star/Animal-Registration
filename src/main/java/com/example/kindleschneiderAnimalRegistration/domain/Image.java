@@ -54,7 +54,7 @@ public class Image {
         if (contents == null || contents.length == 0) {
             return null;
         }
-        return "data:" + encoding + ";base64" + Base64.getEncoder().encodeToString(contents);
+        return "data:" + encoding + ";base64," + Base64.getEncoder().encodeToString(contents);
     }
 
 
