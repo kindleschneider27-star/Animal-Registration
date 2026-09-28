@@ -9,6 +9,23 @@
 <div th:replace="~{fragments :: header}"></div>
 
 <main>
+    <div>
+        <h3>Search Animals</h3>
+        <form method = "GET" th:action="@{/list}">
+            Name: <input type = "text" name = "searchName" th:value="${searchName}">
+            Type: <select name="filterType" >
+            <option value=""></option>
+            <option th:each="t : ${AnimalType}"
+                    th:value="${t}"
+                    th:text="${t}"
+                    th:selected="${t == filterType}">TYPE HERE</option>
+        </select>
+            Breed/Subtype: <input type="text" name = "filterSubtype" th:value="${filterSubtype}">
+            <input type = "submit" value = "Search Animals">
+            <a th:href="@{/list}">Clear Search</a>
+        </form>
+
+    </div>
     <h2>List of Animals</h2>
     <div th:if="${animalDB == null|| animalDB.size() == 0}">
         <p>No animals found</p>
