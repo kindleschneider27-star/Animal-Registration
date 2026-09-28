@@ -39,7 +39,7 @@ public class AnimalListController {
                               @RequestParam(required = false) AnimalType filterType,
                               @RequestParam(defaultValue = "") String filterSubtype,
                               Model model) {
-        model.addAttribute("animalDB", animalService.getAllAnimals());
+        model.addAttribute("animalDB", animalService.searchAnimals(searchName, filterType, filterSubtype));
 
         model.addAttribute("searchName", searchName);
         model.addAttribute("filterType", filterType);
