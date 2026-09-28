@@ -4,6 +4,7 @@ package com.example.kindleschneiderAnimalRegistration.web;
 import com.example.kindleschneiderAnimalRegistration.domain.Animal;
 import com.example.kindleschneiderAnimalRegistration.domain.AnimalDB;
 import com.example.kindleschneiderAnimalRegistration.domain.AnimalType;
+import com.example.kindleschneiderAnimalRegistration.services.AnimalService;
 import jakarta.validation.Valid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -21,8 +22,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class RegisterAnimalController {
     private static final Logger logger = LoggerFactory.getLogger(RegisterAnimalController.class);
 
-    @Autowired
-    private AnimalDB animalDB;
+    private final AnimalService animalService;
+
+    public RegisterAnimalController(AnimalService as) {
+        animalService = as;
+    }
 
     @ModelAttribute("pageTitle")
     public String addPageTitle(){
@@ -53,16 +57,7 @@ public class RegisterAnimalController {
             return "animalRegistrationForm";
         }
 
-        if(animal.hasImage()) {
-            String imageName = animal.getImage().getImageName();
-            imageName = animal.getName() + imageName.substring(imageName.lastIndexOf('.'));
-            animal.getImage().setImageName(imageName);
-        }
-
-        animalDB.addAnimal(animal);
-
-       logger.info("Animal Registered {}", animal);
-
-        return "redirect:/view/current/" + animal.getId();
+       Animal addedAnimal = animalService.registerNewAnimal(animal);
+        return "redirect:/view/current/" + addedAnimal.getId();
     }
 }

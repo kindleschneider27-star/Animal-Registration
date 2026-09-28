@@ -13,7 +13,7 @@
         <img th:if="${current.hasImage()}" th:src="${current.image.getDataUri()}" alt="Image of pet" />
         <img th:unless="${current.hasImage()}" th:src="@{/Images/NoPhotoLarge.jpg}" alt="no image"/>
     </aside>
-    <h2 th:text="${current.imageName}">Animal Name</h2>
+    <h2 th:text="${current.name}">Animal Name</h2>
     <p>Type: <span th:text = "${current.type}">Type</span></p>
     <p>Breed/Subtype: <span th:text = "${current.subtype}">Breed</span></p>
     <p>Birthdate: <span th:text = "${current.birthdate}">Birthdate</span></p>

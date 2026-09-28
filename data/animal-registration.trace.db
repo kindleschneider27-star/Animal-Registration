@@ -1,0 +1,3 @@
+2026-09-27 17:21:14.890718-07:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ANIMALS" not found; SQL statement:
+SELECT * FROM ANIMALS [42102-240]
