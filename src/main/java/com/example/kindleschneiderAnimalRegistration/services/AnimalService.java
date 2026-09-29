@@ -88,9 +88,11 @@ public class AnimalService {
         return db;
     }
 
+    @Transactional
     public boolean updateAnimal(UUID id, Animal animal) {
 
         if(!animalRepo.existsById(id)){
+            logger.info("Animal with id {} does not exist", id);
             return false;
         }
 
@@ -102,6 +104,18 @@ public class AnimalService {
 
         animal.setId(id);
         animalRepo.save(animal);
+        logger.info("Animal Updated {}", animal);
+        return true;
+    }
+
+    @Transactional
+    public boolean deleteAnimalById(UUID id) {
+        if(!animalRepo.existsById(id)){
+            logger.info("Animal with id {} does not exist", id);
+            return false;
+        }
+        animalRepo.deleteById(id);
+        logger.info("Animal with id {} has been deleted", id);
         return true;
     }
 }

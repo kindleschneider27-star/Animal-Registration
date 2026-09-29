@@ -1,7 +1,7 @@
 package com.example.kindleschneiderAnimalRegistration.web;
 
 
-import com.example.kindleschneiderAnimalRegistration.domain.AnimalDB;
+
 import com.example.kindleschneiderAnimalRegistration.domain.AnimalType;
 import com.example.kindleschneiderAnimalRegistration.services.AnimalService;
 import org.slf4j.Logger;

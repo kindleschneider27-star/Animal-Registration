@@ -1,20 +1,20 @@
-2026-09-28T14:14:45.374-07:00  INFO 32412 --- [AnimalRegistration] [restartedMain] leSchneiderAnimalRegistrationApplication : Starting KindleSchneiderAnimalRegistrationApplication using Java 24.0.2 with PID 32412 (C:\Users\kmile\Documents\school mcc\homework\spring 2026\homework\KindleSchneider-AnimalRegistration\target\classes started by kmile in C:\Users\kmile\Documents\school mcc\homework\spring 2026\homework\KindleSchneider-AnimalRegistration)
-2026-09-28T14:14:45.378-07:00  INFO 32412 --- [AnimalRegistration] [restartedMain] leSchneiderAnimalRegistrationApplication : No active profile set, falling back to 1 default profile: "default"
-2026-09-28T14:14:45.413-07:00  INFO 32412 --- [AnimalRegistration] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2026-09-28T14:14:45.413-07:00  INFO 32412 --- [AnimalRegistration] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2026-09-28T14:14:45.967-07:00  INFO 32412 --- [AnimalRegistration] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-09-28T14:14:46.007-07:00  INFO 32412 --- [AnimalRegistration] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 1 JPA repository interface.
-2026-09-28T14:14:46.394-07:00  INFO 32412 --- [AnimalRegistration] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2026-09-28T14:14:46.405-07:00  INFO 32412 --- [AnimalRegistration] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-09-28T14:14:46.405-07:00  INFO 32412 --- [AnimalRegistration] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
-2026-09-28T14:14:46.436-07:00  INFO 32412 --- [AnimalRegistration] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1023 ms
-2026-09-28T14:14:46.559-07:00  INFO 32412 --- [AnimalRegistration] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-09-28T14:14:46.615-07:00  INFO 32412 --- [AnimalRegistration] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.5.Final
-2026-09-28T14:14:46.972-07:00  INFO 32412 --- [AnimalRegistration] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-09-28T14:14:47.000-07:00  INFO 32412 --- [AnimalRegistration] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-09-28T14:14:47.164-07:00  INFO 32412 --- [AnimalRegistration] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/animal-registration user=ADMIN
-2026-09-28T14:14:47.165-07:00  INFO 32412 --- [AnimalRegistration] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-09-28T14:14:47.217-07:00  INFO 32412 --- [AnimalRegistration] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2026-09-29T13:06:17.519-07:00  INFO 42412 --- [AnimalRegistration] [restartedMain] leSchneiderAnimalRegistrationApplication : Starting KindleSchneiderAnimalRegistrationApplication using Java 24.0.2 with PID 42412 (C:\Users\kmile\Documents\school mcc\homework\spring 2026\homework\KindleSchneider-AnimalRegistration\target\classes started by kmile in C:\Users\kmile\Documents\school mcc\homework\spring 2026\homework\KindleSchneider-AnimalRegistration)
+2026-09-29T13:06:17.523-07:00  INFO 42412 --- [AnimalRegistration] [restartedMain] leSchneiderAnimalRegistrationApplication : No active profile set, falling back to 1 default profile: "default"
+2026-09-29T13:06:17.553-07:00  INFO 42412 --- [AnimalRegistration] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-29T13:06:17.554-07:00  INFO 42412 --- [AnimalRegistration] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-29T13:06:18.025-07:00  INFO 42412 --- [AnimalRegistration] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-29T13:06:18.060-07:00  INFO 42412 --- [AnimalRegistration] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 1 JPA repository interface.
+2026-09-29T13:06:18.404-07:00  INFO 42412 --- [AnimalRegistration] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-09-29T13:06:18.415-07:00  INFO 42412 --- [AnimalRegistration] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-29T13:06:18.415-07:00  INFO 42412 --- [AnimalRegistration] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-29T13:06:18.445-07:00  INFO 42412 --- [AnimalRegistration] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 891 ms
+2026-09-29T13:06:18.561-07:00  INFO 42412 --- [AnimalRegistration] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-29T13:06:18.615-07:00  INFO 42412 --- [AnimalRegistration] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-09-29T13:06:18.961-07:00  INFO 42412 --- [AnimalRegistration] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-29T13:06:18.987-07:00  INFO 42412 --- [AnimalRegistration] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-29T13:06:19.142-07:00  INFO 42412 --- [AnimalRegistration] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/animal-registration user=ADMIN
+2026-09-29T13:06:19.143-07:00  INFO 42412 --- [AnimalRegistration] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-29T13:06:19.193-07:00  INFO 42412 --- [AnimalRegistration] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [jdbc:h2:file:./data/animal-registration]
 	Database driver: H2 JDBC Driver
 	Database dialect: H2Dialect
@@ -26,38 +26,38 @@
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-09-28T14:14:47.900-07:00  INFO 32412 --- [AnimalRegistration] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-09-28T14:14:47.939-07:00  INFO 32412 --- [AnimalRegistration] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-09-28T14:14:47.997-07:00  INFO 32412 --- [AnimalRegistration] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-09-28T14:14:48.100-07:00  WARN 32412 --- [AnimalRegistration] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-09-28T14:14:48.303-07:00  INFO 32412 --- [AnimalRegistration] [restartedMain] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/animal-registration'
-2026-09-28T14:14:48.336-07:00  INFO 32412 --- [AnimalRegistration] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2026-09-28T14:14:48.339-07:00  INFO 32412 --- [AnimalRegistration] [restartedMain] leSchneiderAnimalRegistrationApplication : Started KindleSchneiderAnimalRegistrationApplication in 3.327 seconds (process running for 4.136)
-2026-09-28T14:15:17.640-07:00  INFO 32412 --- [AnimalRegistration] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-09-28T14:15:17.640-07:00  INFO 32412 --- [AnimalRegistration] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-09-28T14:15:17.641-07:00  INFO 32412 --- [AnimalRegistration] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2026-09-28T14:15:53.534-07:00  INFO 32412 --- [AnimalRegistration] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2026-09-28T14:15:53.538-07:00  INFO 32412 --- [AnimalRegistration] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2026-09-28T14:15:53.542-07:00  INFO 32412 --- [AnimalRegistration] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-09-28T14:15:53.544-07:00  INFO 32412 --- [AnimalRegistration] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-09-28T14:15:53.550-07:00  INFO 32412 --- [AnimalRegistration] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-09-28T15:37:25.655-07:00  INFO 36956 --- [AnimalRegistration] [restartedMain] leSchneiderAnimalRegistrationApplication : Starting KindleSchneiderAnimalRegistrationApplication using Java 24.0.2 with PID 36956 (C:\Users\kmile\Documents\school mcc\homework\spring 2026\homework\KindleSchneider-AnimalRegistration\target\classes started by kmile in C:\Users\kmile\Documents\school mcc\homework\spring 2026\homework\KindleSchneider-AnimalRegistration)
-2026-09-28T15:37:25.657-07:00  INFO 36956 --- [AnimalRegistration] [restartedMain] leSchneiderAnimalRegistrationApplication : No active profile set, falling back to 1 default profile: "default"
-2026-09-28T15:37:25.688-07:00  INFO 36956 --- [AnimalRegistration] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2026-09-28T15:37:25.688-07:00  INFO 36956 --- [AnimalRegistration] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2026-09-28T15:37:26.095-07:00  INFO 36956 --- [AnimalRegistration] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-09-28T15:37:26.130-07:00  INFO 36956 --- [AnimalRegistration] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 1 JPA repository interface.
-2026-09-28T15:37:26.446-07:00  INFO 36956 --- [AnimalRegistration] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2026-09-28T15:37:26.455-07:00  INFO 36956 --- [AnimalRegistration] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-09-28T15:37:26.455-07:00  INFO 36956 --- [AnimalRegistration] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
-2026-09-28T15:37:26.482-07:00  INFO 36956 --- [AnimalRegistration] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 793 ms
-2026-09-28T15:37:26.588-07:00  INFO 36956 --- [AnimalRegistration] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-09-28T15:37:26.625-07:00  INFO 36956 --- [AnimalRegistration] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.5.Final
-2026-09-28T15:37:26.924-07:00  INFO 36956 --- [AnimalRegistration] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-09-28T15:37:26.945-07:00  INFO 36956 --- [AnimalRegistration] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-09-28T15:37:27.078-07:00  INFO 36956 --- [AnimalRegistration] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/animal-registration user=ADMIN
-2026-09-28T15:37:27.079-07:00  INFO 36956 --- [AnimalRegistration] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-09-28T15:37:27.118-07:00  INFO 36956 --- [AnimalRegistration] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2026-09-29T13:06:19.859-07:00  INFO 42412 --- [AnimalRegistration] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-29T13:06:19.899-07:00  INFO 42412 --- [AnimalRegistration] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-29T13:06:19.955-07:00  INFO 42412 --- [AnimalRegistration] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-29T13:06:20.115-07:00  WARN 42412 --- [AnimalRegistration] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-29T13:06:20.318-07:00  INFO 42412 --- [AnimalRegistration] [restartedMain] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/animal-registration'
+2026-09-29T13:06:20.356-07:00  INFO 42412 --- [AnimalRegistration] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-09-29T13:06:20.359-07:00  INFO 42412 --- [AnimalRegistration] [restartedMain] leSchneiderAnimalRegistrationApplication : Started KindleSchneiderAnimalRegistrationApplication in 3.176 seconds (process running for 3.737)
+2026-09-29T13:06:24.792-07:00  INFO 42412 --- [AnimalRegistration] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-29T13:06:24.792-07:00  INFO 42412 --- [AnimalRegistration] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-29T13:06:24.793-07:00  INFO 42412 --- [AnimalRegistration] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-09-29T13:07:23.631-07:00  INFO 42412 --- [AnimalRegistration] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-29T13:07:23.634-07:00  INFO 42412 --- [AnimalRegistration] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-09-29T13:07:23.636-07:00  INFO 42412 --- [AnimalRegistration] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-29T13:07:23.638-07:00  INFO 42412 --- [AnimalRegistration] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-29T13:07:23.643-07:00  INFO 42412 --- [AnimalRegistration] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-09-29T13:07:25.319-07:00  INFO 18348 --- [AnimalRegistration] [restartedMain] leSchneiderAnimalRegistrationApplication : Starting KindleSchneiderAnimalRegistrationApplication using Java 24.0.2 with PID 18348 (C:\Users\kmile\Documents\school mcc\homework\spring 2026\homework\KindleSchneider-AnimalRegistration\target\classes started by kmile in C:\Users\kmile\Documents\school mcc\homework\spring 2026\homework\KindleSchneider-AnimalRegistration)
+2026-09-29T13:07:25.321-07:00  INFO 18348 --- [AnimalRegistration] [restartedMain] leSchneiderAnimalRegistrationApplication : No active profile set, falling back to 1 default profile: "default"
+2026-09-29T13:07:25.349-07:00  INFO 18348 --- [AnimalRegistration] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-29T13:07:25.349-07:00  INFO 18348 --- [AnimalRegistration] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-29T13:07:25.720-07:00  INFO 18348 --- [AnimalRegistration] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-29T13:07:25.750-07:00  INFO 18348 --- [AnimalRegistration] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 1 JPA repository interface.
+2026-09-29T13:07:26.069-07:00  INFO 18348 --- [AnimalRegistration] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-09-29T13:07:26.080-07:00  INFO 18348 --- [AnimalRegistration] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-29T13:07:26.080-07:00  INFO 18348 --- [AnimalRegistration] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-29T13:07:26.107-07:00  INFO 18348 --- [AnimalRegistration] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 758 ms
+2026-09-29T13:07:26.209-07:00  INFO 18348 --- [AnimalRegistration] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-29T13:07:26.245-07:00  INFO 18348 --- [AnimalRegistration] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-09-29T13:07:26.555-07:00  INFO 18348 --- [AnimalRegistration] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-29T13:07:26.579-07:00  INFO 18348 --- [AnimalRegistration] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-29T13:07:26.707-07:00  INFO 18348 --- [AnimalRegistration] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/animal-registration user=ADMIN
+2026-09-29T13:07:26.709-07:00  INFO 18348 --- [AnimalRegistration] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-29T13:07:26.746-07:00  INFO 18348 --- [AnimalRegistration] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [jdbc:h2:file:./data/animal-registration]
 	Database driver: H2 JDBC Driver
 	Database dialect: H2Dialect
@@ -69,38 +69,38 @@
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-09-28T15:37:27.685-07:00  INFO 36956 --- [AnimalRegistration] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-09-28T15:37:27.720-07:00  INFO 36956 --- [AnimalRegistration] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-09-28T15:37:27.767-07:00  INFO 36956 --- [AnimalRegistration] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-09-28T15:37:27.915-07:00  WARN 36956 --- [AnimalRegistration] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-09-28T15:37:28.097-07:00  INFO 36956 --- [AnimalRegistration] [restartedMain] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/animal-registration'
-2026-09-28T15:37:28.131-07:00  INFO 36956 --- [AnimalRegistration] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2026-09-28T15:37:28.135-07:00  INFO 36956 --- [AnimalRegistration] [restartedMain] leSchneiderAnimalRegistrationApplication : Started KindleSchneiderAnimalRegistrationApplication in 2.788 seconds (process running for 3.238)
-2026-09-28T15:37:34.628-07:00  INFO 36956 --- [AnimalRegistration] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-09-28T15:37:34.628-07:00  INFO 36956 --- [AnimalRegistration] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-09-28T15:37:34.629-07:00  INFO 36956 --- [AnimalRegistration] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2026-09-28T15:38:09.611-07:00  INFO 36956 --- [AnimalRegistration] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2026-09-28T15:38:09.620-07:00  INFO 36956 --- [AnimalRegistration] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2026-09-28T15:38:09.623-07:00  INFO 36956 --- [AnimalRegistration] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-09-28T15:38:09.625-07:00  INFO 36956 --- [AnimalRegistration] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-09-28T15:38:09.671-07:00  INFO 36956 --- [AnimalRegistration] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-09-28T20:52:15.128-07:00  INFO 45532 --- [AnimalRegistration] [restartedMain] leSchneiderAnimalRegistrationApplication : Starting KindleSchneiderAnimalRegistrationApplication using Java 24.0.2 with PID 45532 (C:\Users\kmile\Documents\school mcc\homework\spring 2026\homework\KindleSchneider-AnimalRegistration\target\classes started by kmile in C:\Users\kmile\Documents\school mcc\homework\spring 2026\homework\KindleSchneider-AnimalRegistration)
-2026-09-28T20:52:15.130-07:00  INFO 45532 --- [AnimalRegistration] [restartedMain] leSchneiderAnimalRegistrationApplication : No active profile set, falling back to 1 default profile: "default"
-2026-09-28T20:52:15.159-07:00  INFO 45532 --- [AnimalRegistration] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2026-09-28T20:52:15.159-07:00  INFO 45532 --- [AnimalRegistration] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2026-09-28T20:52:15.576-07:00  INFO 45532 --- [AnimalRegistration] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-09-28T20:52:15.610-07:00  INFO 45532 --- [AnimalRegistration] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 1 JPA repository interface.
-2026-09-28T20:52:15.922-07:00  INFO 45532 --- [AnimalRegistration] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2026-09-28T20:52:15.932-07:00  INFO 45532 --- [AnimalRegistration] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-09-28T20:52:15.932-07:00  INFO 45532 --- [AnimalRegistration] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
-2026-09-28T20:52:15.957-07:00  INFO 45532 --- [AnimalRegistration] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 798 ms
-2026-09-28T20:52:16.060-07:00  INFO 45532 --- [AnimalRegistration] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-09-28T20:52:16.095-07:00  INFO 45532 --- [AnimalRegistration] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.5.Final
-2026-09-28T20:52:16.389-07:00  INFO 45532 --- [AnimalRegistration] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-09-28T20:52:16.411-07:00  INFO 45532 --- [AnimalRegistration] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-09-28T20:52:16.543-07:00  INFO 45532 --- [AnimalRegistration] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/animal-registration user=ADMIN
-2026-09-28T20:52:16.544-07:00  INFO 45532 --- [AnimalRegistration] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-09-28T20:52:16.582-07:00  INFO 45532 --- [AnimalRegistration] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2026-09-29T13:07:27.332-07:00  INFO 18348 --- [AnimalRegistration] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-29T13:07:27.372-07:00  INFO 18348 --- [AnimalRegistration] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-29T13:07:27.421-07:00  INFO 18348 --- [AnimalRegistration] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-29T13:07:27.575-07:00  WARN 18348 --- [AnimalRegistration] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-29T13:07:27.771-07:00  INFO 18348 --- [AnimalRegistration] [restartedMain] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/animal-registration'
+2026-09-29T13:07:27.806-07:00  INFO 18348 --- [AnimalRegistration] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-09-29T13:07:27.809-07:00  INFO 18348 --- [AnimalRegistration] [restartedMain] leSchneiderAnimalRegistrationApplication : Started KindleSchneiderAnimalRegistrationApplication in 2.789 seconds (process running for 3.235)
+2026-09-29T13:07:31.162-07:00  INFO 18348 --- [AnimalRegistration] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-29T13:07:31.162-07:00  INFO 18348 --- [AnimalRegistration] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-29T13:07:31.162-07:00  INFO 18348 --- [AnimalRegistration] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-09-29T13:11:19.050-07:00  INFO 18348 --- [AnimalRegistration] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-29T13:11:19.053-07:00  INFO 18348 --- [AnimalRegistration] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-09-29T13:11:19.055-07:00  INFO 18348 --- [AnimalRegistration] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-29T13:11:19.057-07:00  INFO 18348 --- [AnimalRegistration] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-29T13:11:19.062-07:00  INFO 18348 --- [AnimalRegistration] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-09-29T13:11:20.752-07:00  INFO 7440 --- [AnimalRegistration] [restartedMain] leSchneiderAnimalRegistrationApplication : Starting KindleSchneiderAnimalRegistrationApplication using Java 24.0.2 with PID 7440 (C:\Users\kmile\Documents\school mcc\homework\spring 2026\homework\KindleSchneider-AnimalRegistration\target\classes started by kmile in C:\Users\kmile\Documents\school mcc\homework\spring 2026\homework\KindleSchneider-AnimalRegistration)
+2026-09-29T13:11:20.754-07:00  INFO 7440 --- [AnimalRegistration] [restartedMain] leSchneiderAnimalRegistrationApplication : No active profile set, falling back to 1 default profile: "default"
+2026-09-29T13:11:20.782-07:00  INFO 7440 --- [AnimalRegistration] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-29T13:11:20.782-07:00  INFO 7440 --- [AnimalRegistration] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-29T13:11:21.158-07:00  INFO 7440 --- [AnimalRegistration] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-29T13:11:21.188-07:00  INFO 7440 --- [AnimalRegistration] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 1 JPA repository interface.
+2026-09-29T13:11:21.495-07:00  INFO 7440 --- [AnimalRegistration] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-09-29T13:11:21.504-07:00  INFO 7440 --- [AnimalRegistration] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-29T13:11:21.504-07:00  INFO 7440 --- [AnimalRegistration] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-29T13:11:21.529-07:00  INFO 7440 --- [AnimalRegistration] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 747 ms
+2026-09-29T13:11:21.634-07:00  INFO 7440 --- [AnimalRegistration] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-29T13:11:21.675-07:00  INFO 7440 --- [AnimalRegistration] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-09-29T13:11:22.009-07:00  INFO 7440 --- [AnimalRegistration] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-29T13:11:22.037-07:00  INFO 7440 --- [AnimalRegistration] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-29T13:11:22.183-07:00  INFO 7440 --- [AnimalRegistration] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/animal-registration user=ADMIN
+2026-09-29T13:11:22.184-07:00  INFO 7440 --- [AnimalRegistration] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-29T13:11:22.226-07:00  INFO 7440 --- [AnimalRegistration] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [jdbc:h2:file:./data/animal-registration]
 	Database driver: H2 JDBC Driver
 	Database dialect: H2Dialect
@@ -112,18 +112,20 @@
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-09-28T20:52:17.145-07:00  INFO 45532 --- [AnimalRegistration] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-09-28T20:52:17.180-07:00  INFO 45532 --- [AnimalRegistration] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-09-28T20:52:17.228-07:00  INFO 45532 --- [AnimalRegistration] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-09-28T20:52:17.364-07:00  WARN 45532 --- [AnimalRegistration] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-09-28T20:52:17.543-07:00  INFO 45532 --- [AnimalRegistration] [restartedMain] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/animal-registration'
-2026-09-28T20:52:17.575-07:00  INFO 45532 --- [AnimalRegistration] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2026-09-28T20:52:17.578-07:00  INFO 45532 --- [AnimalRegistration] [restartedMain] leSchneiderAnimalRegistrationApplication : Started KindleSchneiderAnimalRegistrationApplication in 2.761 seconds (process running for 3.234)
-2026-09-28T20:52:19.547-07:00  INFO 45532 --- [AnimalRegistration] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-09-28T20:52:19.547-07:00  INFO 45532 --- [AnimalRegistration] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-09-28T20:52:19.548-07:00  INFO 45532 --- [AnimalRegistration] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2026-09-28T20:52:34.690-07:00  INFO 45532 --- [AnimalRegistration] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2026-09-28T20:52:34.693-07:00  INFO 45532 --- [AnimalRegistration] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2026-09-28T20:52:34.696-07:00  INFO 45532 --- [AnimalRegistration] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-09-28T20:52:34.698-07:00  INFO 45532 --- [AnimalRegistration] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-09-28T20:52:34.704-07:00  INFO 45532 --- [AnimalRegistration] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-09-29T13:11:22.867-07:00  INFO 7440 --- [AnimalRegistration] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-29T13:11:22.902-07:00  INFO 7440 --- [AnimalRegistration] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-29T13:11:22.949-07:00  INFO 7440 --- [AnimalRegistration] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-29T13:11:23.093-07:00  WARN 7440 --- [AnimalRegistration] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-29T13:11:23.274-07:00  INFO 7440 --- [AnimalRegistration] [restartedMain] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/animal-registration'
+2026-09-29T13:11:23.306-07:00  INFO 7440 --- [AnimalRegistration] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-09-29T13:11:23.309-07:00  INFO 7440 --- [AnimalRegistration] [restartedMain] leSchneiderAnimalRegistrationApplication : Started KindleSchneiderAnimalRegistrationApplication in 2.853 seconds (process running for 3.289)
+2026-09-29T13:11:27.048-07:00  INFO 7440 --- [AnimalRegistration] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-29T13:11:27.049-07:00  INFO 7440 --- [AnimalRegistration] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-29T13:11:27.049-07:00  INFO 7440 --- [AnimalRegistration] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-09-29T13:11:33.858-07:00  INFO 7440 --- [AnimalRegistration] [http-nio-8080-exec-5] c.e.k.services.AnimalService             : Animal Updated Animal{id=76a1b2b5-eeab-4bf1-b5c8-30f0ef98cbb5, name='boots', type=Dog, subtype='lab', birthdate='10/13/2020', ownerName='kindle', ownerContact='3399455888', image=com.example.kindleschneiderAnimalRegistration.domain.Image@441ab5c7}
+2026-09-29T13:11:45.758-07:00  INFO 7440 --- [AnimalRegistration] [http-nio-8080-exec-8] c.e.k.services.AnimalService             : Animal with id 76a1b2b5-eeab-4bf1-b5c8-30f0ef98cbb5 has been deleted
+2026-09-29T13:11:58.392-07:00  INFO 7440 --- [AnimalRegistration] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-29T13:11:58.395-07:00  INFO 7440 --- [AnimalRegistration] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-09-29T13:11:58.397-07:00  INFO 7440 --- [AnimalRegistration] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-29T13:11:58.399-07:00  INFO 7440 --- [AnimalRegistration] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-29T13:11:58.425-07:00  INFO 7440 --- [AnimalRegistration] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

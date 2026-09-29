@@ -7,8 +7,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.ui.Model;
 import com.example.kindleschneiderAnimalRegistration.domain.Animal;
-import com.example.kindleschneiderAnimalRegistration.domain.AnimalDB;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.*;
@@ -72,17 +70,14 @@ public AnimalViewController(AnimalService as) {
         }
 
         animalService.updateAnimal(id, animal);
-
-        boolean saved = animalService.updateAnimal(id, animal);
-
-        if(saved){
-            logger.info("Animal updated successfully at ID {}", id);
-        }
-        else{
-            logger.info("Animal updated failed, ID {} doesnt exist", id);
-        }
-
         return "redirect:/view/current/" + id;
+    }
+
+    @PostMapping("/current/{id}/delete")
+    public String deleteAnimal(@PathVariable UUID id) {
+
+    animalService.deleteAnimalById(id);
+        return "redirect:/list";
     }
 
 }

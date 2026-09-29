@@ -2,7 +2,6 @@ package com.example.kindleschneiderAnimalRegistration.web;
 
 
 import com.example.kindleschneiderAnimalRegistration.domain.Animal;
-import com.example.kindleschneiderAnimalRegistration.domain.AnimalDB;
 import com.example.kindleschneiderAnimalRegistration.domain.AnimalType;
 import com.example.kindleschneiderAnimalRegistration.services.AnimalService;
 import jakarta.validation.Valid;
