@@ -19,6 +19,10 @@
     <p>Birthdate: <span th:text = "${current.birthdate}">Birthdate</span></p>
     <p>Owner Name: <span th:text = "${current.ownerName}">Owner Name</span></p>
     <p>Owner Contact: <span th:text = "${current.ownerContact}">Owner Contact</span></p>
+
+    <form method="GET" th:action="@{'/view/curent/'+ ${current.id} + '/edit'}">
+        <input type="submit" value="Edit">
+    </form>
 </main>
 
 <footer th:replace="~{fragments :: footer}"></footer>

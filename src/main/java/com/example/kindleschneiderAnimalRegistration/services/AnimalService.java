@@ -87,4 +87,21 @@ public class AnimalService {
 
         return db;
     }
+
+    public boolean updateAnimal(UUID id, Animal animal) {
+
+        if(!animalRepo.existsById(id)){
+            return false;
+        }
+
+        Animal lookup = animalRepo.findById(id).get();
+
+        if(lookup.hasImage() && !animal.hasImage()) {
+            animal.setImage(lookup.getImage());
+        }
+
+        animal.setId(id);
+        animalRepo.save(animal);
+        return true;
+    }
 }

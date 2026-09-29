@@ -1,6 +1,8 @@
 package com.example.kindleschneiderAnimalRegistration.web;
 
+import com.example.kindleschneiderAnimalRegistration.domain.AnimalType;
 import com.example.kindleschneiderAnimalRegistration.services.AnimalService;
+import jakarta.validation.Valid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.ui.Model;
@@ -8,10 +10,8 @@ import com.example.kindleschneiderAnimalRegistration.domain.Animal;
 import com.example.kindleschneiderAnimalRegistration.domain.AnimalDB;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.validation.Errors;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
 import java.util.UUID;
@@ -33,7 +33,7 @@ public AnimalViewController(AnimalService as) {
 
         Optional<Animal> animal = animalService.getAnimalbyId(id);
         if(animal.isEmpty()){
-            logger.debug("No animal found with id: {} ", id);
+            logger.debug("No animal found with id: {} to view", id);
             return "redirect:/list";
         }
 
@@ -42,4 +42,47 @@ public AnimalViewController(AnimalService as) {
         model.addAttribute("pageTitle", current.getName());
         return "viewAnimal";
     }
+
+    @GetMapping("/current/{id}/edit")
+    public String viewEditAnimal(@PathVariable UUID id, Model model) {
+
+        Optional<Animal> animal = animalService.getAnimalbyId(id);
+        if(animal.isEmpty()){
+            logger.debug("No animal found with id: {} to edit", id);
+            return "redirect:/list";
+        }
+
+        Animal current = animal.get();
+
+        model.addAttribute("AnimalType", AnimalType.values());
+        model.addAttribute("animal", current);
+        model.addAttribute("pageTitle", current.getName());
+
+    return "animalModifyForm";
+    }
+
+    @PostMapping("/current/{id}/edit")
+    public String modifyAnimal(@PathVariable UUID id, @Valid Animal animal, Errors errors, Model model) {
+        logger.debug("Animal registered : {} for modifying", animal);
+
+        if(errors.hasErrors()){
+            model.addAttribute("AnimalType", AnimalType.values());
+            model.addAttribute("pageTitle", animal.getName());
+            return "animalModifyForm";
+        }
+
+        animalService.updateAnimal(id, animal);
+
+        boolean saved = animalService.updateAnimal(id, animal);
+
+        if(saved){
+            logger.info("Animal updated successfully at ID {}", id);
+        }
+        else{
+            logger.info("Animal updated failed, ID {} doesnt exist", id);
+        }
+
+        return "redirect:/view/current/" + id;
+    }
+
 }
